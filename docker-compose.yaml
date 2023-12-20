@@ -1,14 +1,5 @@
 version: "3.8"
 services:
-  db:
-    image: postgres:12
-    ports:
-      - "5432:5432"
-    environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB=test_db
-
   zookeeper:
     image: bitnami/zookeeper:latest
     restart: on-failure
